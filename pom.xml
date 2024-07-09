@@ -13,19 +13,25 @@
 	<version>0.0.1</version>
 	<name>Wikimedia-data-processing</name>
 	<description>Wikimedia Data Processing</description>
-	<url/>
+	<packaging>pom</packaging>
+	<url>https://github.com/tienhuynh-tn/Wikimedia-data-processing</url>
 	<licenses>
-		<license/>
+		<license>
+			<name>MIT License</name>
+			<url>https://github.com/tienhuynh-tn/Wikimedia-data-processing/blob/main/LICENSE</url>
+			<distribution>repo</distribution>
+		</license>
 	</licenses>
 	<developers>
-		<developer/>
+		<developer>
+			<id>tienhuynh-tn</id>
+			<name>Tien Huynh</name>
+			<email>tien.huynhlt.tn@gmail.com</email>
+			<roles>
+				<role>Developer</role>
+			</roles>
+		</developer>
 	</developers>
-	<scm>
-		<connection/>
-		<developerConnection/>
-		<tag/>
-		<url/>
-	</scm>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
