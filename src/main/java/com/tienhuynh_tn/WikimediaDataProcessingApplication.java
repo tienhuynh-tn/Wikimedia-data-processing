@@ -1,4 +1,4 @@
-package com.tienhuynh_tn.Wikimedia_data_processing;
+package com.tienhuynh_tn;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
