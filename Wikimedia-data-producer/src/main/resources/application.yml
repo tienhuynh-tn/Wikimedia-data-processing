@@ -3,7 +3,9 @@ spring:
   kafka:
     producer:
       bootstrap-servers: localhost:9092
-
 kafka:
   topic:
     name: wikimedia_data
+
+wikimedia:
+  stream-url: https://stream.wikimedia.org/v2/stream/recentchange
