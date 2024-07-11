@@ -3,12 +3,12 @@ package com.tienhuynh_tn.producer;
 import com.launchdarkly.eventsource.EventHandler;
 import com.launchdarkly.eventsource.EventSource;
 import com.tienhuynh_tn.handler.WikimediaChangesHandler;
+import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
-import lombok.RequiredArgsConstructor;
 
 import java.net.URI;
 import java.util.concurrent.TimeUnit;
