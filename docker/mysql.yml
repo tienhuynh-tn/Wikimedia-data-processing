@@ -7,6 +7,8 @@ services:
       MYSQL_DATABASE: wikimedia
     networks:
       springboot-mysql-net:
+    ports:
+      - "3306:3306"
 
 networks:
   springboot-mysql-net:
