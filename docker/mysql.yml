@@ -1,0 +1,12 @@
+services:
+  mysqldb:
+    container_name: mysqldb
+    image: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: Mysql@123
+      MYSQL_DATABASE: wikimedia
+    networks:
+      springboot-mysql-net:
+
+networks:
+  springboot-mysql-net:

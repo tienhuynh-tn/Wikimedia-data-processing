@@ -1,10 +1,22 @@
-# Kafka
 spring:
   kafka:
     consumer:
       bootstrap-servers: localhost:9092
       group-id: data-streaming
       auto-offset-reset: earliest
+  datasource:
+    url: jdbc:mysql://localhost:3306/wikimedia
+    username: root
+    password: Mysql@123
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        show_url: true
+        use_sql_comments: true
+        format_sql: true
+    hibernate:
+      ddl-auto: update
 kafka:
   topic:
     name: wikimedia_data
