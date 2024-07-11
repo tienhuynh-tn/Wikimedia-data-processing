@@ -27,6 +27,7 @@ public class KafkaConfig {
     public NewTopic topic() {
         return TopicBuilder.name(topicName).build();
     }
+
     @Bean
     public ProducerFactory<String, String> producerFactory() {
         Map<String, Object> configProps = new HashMap<>();
