@@ -15,7 +15,8 @@
 	<description>Wikimedia Data Processing</description>
 	<modules>
 		<module>Wikimedia-data-producer</module>
-	</modules>
+        <module>Wikimedia-data-consumer</module>
+    </modules>
 	<packaging>pom</packaging>
 	<url>https://github.com/tienhuynh-tn/Wikimedia-data-processing</url>
 	<licenses>
