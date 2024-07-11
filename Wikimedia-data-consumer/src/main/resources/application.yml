@@ -1,0 +1,10 @@
+# Kafka
+spring:
+  kafka:
+    consumer:
+      bootstrap-servers: localhost:9092
+      group-id: data-streaming
+      auto-offset-reset: earliest
+kafka:
+  topic:
+    name: wikimedia_data
