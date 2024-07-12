@@ -6,14 +6,14 @@ services:
       MYSQL_ROOT_PASSWORD: Mysql@123
       MYSQL_DATABASE: wikimedia
     networks:
-      - springboot-mysql-net
+      - wikimedia-network
     ports:
       - "3306:3306"
     volumes:
       - mysql-data:/var/lib/mysql
 
 networks:
-  springboot-mysql-net:
+  wikimedia-network:
 
 volumes:
   mysql-data:
