@@ -9,6 +9,8 @@
 - [License & Copyright](#license--copyright)
 
 ## Description
+- We're going to read a huge amount of real-time stream data from Wikimedia to the database. We will create a Kafka producer which will read real-time stream data from Wikimedia and then it will write that data to the Kafka broker. Hence, we create a Kafka consumer that will consume the real-time stream data from the Kafka broker and then it will write to the database.
+- The real-time stream data from Wikimedia can be found through this link: [https://stream.wikimedia.org/v2/stream/recentchange](https://stream.wikimedia.org/v2/stream/recentchange)
 - TBU
 
 ## Technology
