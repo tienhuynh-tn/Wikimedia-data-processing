@@ -1,8 +1,8 @@
-# Kafka
 spring:
   kafka:
     producer:
-      bootstrap-servers: localhost:9092
+      bootstrap-servers: broker:29092  # Use service name 'broker' and Kafka port
+
 kafka:
   topic:
     name: wikimedia_data
