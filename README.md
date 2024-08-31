@@ -18,8 +18,8 @@
 - Java Language | version 11
 - Spring Boot Framework | version 2.5.12
 - Kafka
-- Docker
-- Apache Maven 3.8.4
+- Docker | version 27.0.3
+- Apache Maven | version 3.8.4
 
 **2. Database**
 - MySQL
@@ -33,7 +33,9 @@
 - TBU
 
 ## How to run?
-### TBU
+- ``docker compose -f .\docker\docker-compose.yml up -d``
+- ``docker logs -f wikimedia-data-processing``
+- TBU
 
 ## References
 - Course: [[NEW] Building Microservices with Spring Boot & Spring Cloud](https://www.udemy.com/course/building-microservices-with-spring-boot-and-spring-cloud/)

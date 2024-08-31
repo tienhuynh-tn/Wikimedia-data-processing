@@ -8,6 +8,8 @@ services:
     environment:
       ZOOKEEPER_CLIENT_PORT: 2181
       ZOOKEEPER_TICK_TIME: 2000
+    networks:
+      - wikimedia-network
 
   broker:
     image: confluentinc/cp-server:7.3.2
@@ -24,6 +26,8 @@ services:
       KAFKA_LISTENERS: PLAINTEXT://0.0.0.0:9092
       KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://broker:9092
       KAFKA_GROUP_INITIAL_REBALANCE_DELAY_MS: 0
+    networks:
+      - wikimedia-network
 
   kafka-ui:
     container_name: kafka-ui
@@ -37,3 +41,9 @@ services:
       KAFKA_CLUSTERS_0_NAME: LOCAL
       KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS: broker:9092
       KAFKA_CLUSTERS_0_PROPERTIES_SECURITY_PROTOCOL: PLAINTEXT
+    networks:
+      - wikimedia-network
+
+networks:
+  wikimedia-network:
+    driver: bridge
