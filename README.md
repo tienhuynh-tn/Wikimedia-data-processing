@@ -30,6 +30,8 @@
 
 ## How to set up?
 ### Run Docker:
+- ``docker compose -f .\docker\kafka-ui.yml up -d``
+- ``docker compose -f .\docker\mysql.yml up -d``
 - TBU
 
 ## How to run?
