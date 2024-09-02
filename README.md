@@ -35,7 +35,9 @@
 - TBU
 
 ## How to run?
-- ``docker compose -f .\docker\docker-compose.yml up -d``
+- ``cd .\docker\``
+- ``docker-compose build --no-cache``
+- ``docker-compose up -d``
 - ``docker logs -f wikimedia-data-processing``
 - TBU
 
